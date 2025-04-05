@@ -1,8 +1,8 @@
 {
   "name": "Sharemaster: Copy Title & URL with Shortcut",
-  "version": "1.0.0",
-  "manifest_version": 2,
-  "description": "Helps you copy the title and url quickly with keyboard shortcuts",
+  "version": "2.0.0",
+  "manifest_version": 3,
+  "description": "Helps you copy the title and URL quickly with keyboard shortcuts",
   "author": "Walter Teng",
   "homepage_url": "https://github.com/davzoku",
   "icons": {
@@ -10,9 +10,9 @@
     "128": "icon128.png"
   },
   "background": {
-    "scripts": ["background.js"]
+    "service_worker": "background.js"
   },
-  "permissions": ["clipboardWrite", "contextMenus", "tabs"],
+  "permissions": ["activeTab", "clipboardWrite", "contextMenus", "scripting"],
   "commands": {
     "copyTitleURLDefault": {
       "suggested_key": {
